@@ -1,12 +1,7 @@
-<div align="center">
+<h3 style="text-align: center;">Boxuan Shan</h3>
+<h3 style="text-align: center;">单博宣</h3>
 
-**Boxuan Shan**
-
-**单博宣**
-
-Cupertino, California • boxuan.shan@gmail.com • 857 413 1628 • github.com/bxshan
-
-</div>
+<center>Cupertino, California • boxuan.shan@gmail.com • 857 413 1628 • github.com/bxshan</center>
 
 ---
 
