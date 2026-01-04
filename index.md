@@ -57,11 +57,13 @@ Class of 2028
 ## Internship
 
 <div style="display:flex; justify-content:space-between;">
-<span>Next Capital (嘉程资本) — Operations / Investment Intern</span>
+<span>Next Capital (嘉程资本) — Operations / Investment Intern
+<a href="https://www.jiachengcap.com" target="_blank" aria-label="GitHub">
+  ➤
+</a>
+</span>
 <span>July 2025 – August 2025</span>
 </div>
-
-<https://www.jiachengcap.com/>
 
 - Conducted research and wrote reports on targeted areas of potential investment
 - **Research:**
@@ -73,8 +75,8 @@ Class of 2028
 
 ## Research
 
-**Tracing Institutional Bias Transfer from Wikipedia to Large Language Models**  
-<https://github.com/bxshan/research2026>  
+**Tracing Institutional Bias Transfer from Wikipedia to Large Language Models**  <a href="https://github.com/bxshan/research2026" target="_blank" aria-label="GitHub"> ➤ </a>
+
 *Independent Research — October 2025 to Present*
 
 **Abstract**
@@ -85,8 +87,8 @@ Class of 2028
 
 ---
 
-**Developing a Machine Learning Algorithm for Wikipedia Vandalism Detection**  
-<https://github.com/bxshan/wikipedia_vandalism_detection>  
+**Developing a Machine Learning Algorithm for Wikipedia Vandalism Detection**  <a href="https://github.com/bxshan/wikipedia_vandalism_detection" target="_blank" aria-label="GitHub"> ➤ </a>
+
 *Summer 2024*
 
 Conducted with mentorship from **Dr. Françeska Xhakaj (Carnegie Mellon University)** through **Pioneer Academics**
