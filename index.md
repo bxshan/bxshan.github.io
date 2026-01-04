@@ -1,15 +1,7 @@
----
-layout: default
-title: Boxuan Shan
----
-
 <div style="text-align:center">
-
-### Boxuan Shan  
-### 单博宣
-
-Cupertino, California • boxuan.shan@gmail.com • 857 413 1628 • github.com/bxshan
-
+  <h3>Boxuan Shan</h3>
+  <h3>单博宣</h3>
+  <p>Cupertino, California • boxuan.shan@gmail.com • 857 413 1628 • github.com/bxshan</p>
 </div>
 
 ---
@@ -128,5 +120,5 @@ Conducted with mentorship from **Dr. Françeska Xhakaj (Carnegie Mellon Universi
 - **Programming:** Python (USACO, AI/ML), C++ (USACO), Java (AP CS A with Data Structures)
 - **Languages:** Native fluency in **Chinese** and **English**
 - **Athletics:** **Water Polo** Junior Varsity Starter
-- **Additional:** Full programming portfolio at github.com/bxshan
+- **Additional:** Full programming portfolio at <https://github.com/bxshan>
 
