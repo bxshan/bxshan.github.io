@@ -47,8 +47,6 @@ Class of 2028
 
 **99.94% (A+)**, Final Assessment Grade Pending
 
-<br/><br/>
-
 <div style="display:flex; justify-content:space-between;">
 <strong>XM511 Linear Algebra</strong>
 <span>January 2026 – May 2026</span>
