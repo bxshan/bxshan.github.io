@@ -1,3 +1,8 @@
+---
+layout: default
+title: Boxuan Shan Resume
+---
+
 <div style="text-align:center">
   <h3>Boxuan Shan</h3>
   <p>Cupertino, California • <a href="mailto:boxuan.shan@gmail.com">boxuan.shan@gmail.com</a> • 857 413 1628 • <a href="https://github.com/bxshan">github.com/bxshan</a></p>
@@ -12,7 +17,7 @@
 <span>Sep. 2024 - present</span>
 </div>
 
-<div style="font-size: smaller;">
+<div class="subtext">
 <div style="display:flex; justify-content:space-between;">
 <span>Freshman GPA 4.23 (weighted)</span>
 </div>
@@ -47,7 +52,7 @@
 <div style="display:flex; justify-content:space-between;">
 <strong>Stanford Pre-Collegiate University-Level Online Math Courses</strong>
 </div>
-<div style="font-size: smaller;">
+<div class="subtext">
 <div style="display:flex; justify-content:space-between;">
 <span>XM521 Multivariable Differential Calculus</span>
 <span>Fall 2025</span>
@@ -67,7 +72,7 @@
 <div style="display:flex; justify-content:space-between;">
 <strong>USACO Courses with X-Camp (602H)</strong>
 </div>
-<div style="font-size: smaller;">
+<div class="subtext">
 <div style="display:flex; justify-content:space-between;">
 <span>Topics include: DP, Graphs & Trees, Convex Hull Trick, Segment Tree, Square Root Decomp, etc</span>
 <span>Jan. 2025 - present</span>
@@ -87,7 +92,7 @@
 <span>Jul. – Aug. 2025</span>
 </div>
 
-<div style="font-size: smaller;">
+<div class="subtext">
 <div style="display:flex; justify-content:space-between;">
 <span>Conducted research and wrote reports on targeted areas of potential investment</span>
 </div>
@@ -114,7 +119,7 @@
 </strong>
 <span>Oct. 2025 - present</span>
 </div>
-<div style="font-size: smaller;">
+<div class="subtext">
 <div style="display:flex; justify-content:space-between;">
 <span>Independent Research</span>
 </div>
@@ -136,7 +141,7 @@
 </strong>
 <span>Summer 2024</span>
 </div>
-<div style="font-size: smaller;">
+<div class="subtext">
 <div style="display:flex; justify-content:space-between;">
 <span>Conducted with mentorship from Dr. Françeska Xhakaj of Carnegie Mellon University, through Pioneer Academics</span>
 </div>
