@@ -156,7 +156,7 @@
 ## ACHIEVEMENTS
 
 <div style="display:flex; justify-content:space-between;">
-<strong>USACO Gold</strong>
+<strong>USACO Gold Division</strong>
 <span>2024 – 2025 Season</span>
 </div>
 
