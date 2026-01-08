@@ -70,11 +70,11 @@ title: Boxuan Shan Resume
 <br/>
 
 <div style="display:flex; justify-content:space-between;">
-<strong>USACO Courses with X-Camp (602H)</strong>
+<strong>USACO Courses w/ X-Camp (602H)</strong>
 </div>
 <div class="subtext">
 <div style="display:flex; justify-content:space-between;">
-<span>Topics include: DP, Graphs & Trees, Convex Hull Trick, Segment Tree, Square Root Decomp, etc</span>
+<span>Topics include: DP, Graphs & Trees manipulations, DSU, MST, Combinatorics, etc</span>
 <span>Jan. 2025 - present</span>
 </div>
 </div>
@@ -185,4 +185,9 @@ title: Boxuan Shan Resume
 </div>
 <div style="display:flex; justify-content:space-between;">
 <span>More information about my programming journey can be found at <a href="https://github.com/bxshan">github.com/bxshan</a></span>
+</div>
+
+---
+<div style="text-align: center;">
+  :wq&lt;CR&gt;
 </div>
