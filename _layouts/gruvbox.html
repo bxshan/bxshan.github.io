@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ page.title }}</title>
+  <link rel="icon" type="image/png" href="{{ '/icon.png' | relative_url }}">
+  <style>
+    /* Gruvbox Material Dark Medium Theme */
+    :root {
+      /* Background colors */
+      --bg-dim: #1b1b1b;
+      --bg0: #282828;
+      --bg1: #32302f;
+      --bg2: #32302f;
+      --bg3: #45403d;
+      --bg4: #45403d;
+      --bg5: #5a524c;
+
+      /* Foreground colors */
+      --fg0: #d4be98;
+      --fg1: #ddc7a1;
+
+      /* Accent colors */
+      --red: #ea6962;
+      --orange: #e78a4e;
+      --yellow: #d8a657;
+      --green: #a9b665;
+      --aqua: #89b482;
+      --blue: #7daea3;
+      --purple: #d3869b;
+
+      /* Gray colors */
+      --grey0: #7c6f64;
+      --grey1: #928374;
+      --grey2: #a89984;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: var(--bg0);
+      color: var(--fg0);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      line-height: 1.5;
+      margin: 0 auto;
+      padding: 40px 20px;
+      max-width: 800px;
+    }
+
+    /* Headers */
+    h1, h2, h3, h4, h5, h6 {
+      color: var(--fg1);
+      margin-top: 1em;
+      margin-bottom: 0.5em;
+    }
+
+    h1 { color: var(--yellow); }
+    h2 { color: var(--orange); }
+    h3 { color: var(--aqua); }
+
+    /* Links */
+    a {
+      color: var(--blue);
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+
+    a:hover {
+      color: var(--aqua);
+      text-decoration: underline;
+    }
+
+    a:visited {
+      color: var(--purple);
+    }
+
+    /* Horizontal rules */
+    hr {
+      border: none;
+      border-top: 1px solid var(--bg3);
+      margin: 1.5em 0;
+    }
+
+    /* Paragraphs */
+    p {
+      margin: 0.5em 0;
+    }
+
+    /* Strong/Bold text */
+    strong {
+      color: var(--fg1);
+      font-weight: 600;
+    }
+
+    /* Italic text */
+    em, i {
+      color: var(--grey2);
+      font-style: italic;
+    }
+
+    /* Subtext class */
+    .subtext {
+      color: var(--grey2);
+    }
+
+    /* Selection */
+    ::selection {
+      background-color: var(--bg3);
+      color: var(--fg1);
+    }
+
+    /* Code-like elements (for the :wq<CR> at bottom) */
+    code {
+      background-color: var(--bg1);
+      color: var(--green);
+      padding: 2px 6px;
+      border-radius: 3px;
+      font-family: 'Monaco', 'Courier New', monospace;
+    }
+
+    /* Smooth scrolling */
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body>
+  {{ content }}
+</body>
+</html>
