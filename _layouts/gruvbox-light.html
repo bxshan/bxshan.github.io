@@ -5,9 +5,9 @@
   <title>{{ page.title }}</title>
   <link rel="icon" type="image/png" href="{{ '/icon.png' | relative_url }}">
   <style>
-    /* Gruvbox Material Light Soft Theme */
+    /* Gruvbox Material Theme (Light/Dark Switchable) */
     :root {
-      /* Background colors */
+      /* Default to Light Soft Theme */
       --bg-dim: #ebdbb2;
       --bg0: #f2e5bc;
       --bg1: #eddeb5;
@@ -16,11 +16,9 @@
       --bg4: #dac9a5;
       --bg5: #d5c4a1;
 
-      /* Foreground colors */
       --fg0: #654735;
       --fg1: #4f3829;
 
-      /* Accent colors */
       --red: #c14a4a;
       --orange: #c35e0a;
       --yellow: #b47109;
@@ -29,10 +27,35 @@
       --blue: #45707a;
       --purple: #945e80;
 
-      /* Gray colors */
       --grey0: #a89984;
       --grey1: #928374;
       --grey2: #7c6f64;
+    }
+
+    [data-theme="dark"] {
+      /* Dark Medium Theme Overrides */
+      --bg-dim: #1b1b1b;
+      --bg0: #282828;
+      --bg1: #32302f;
+      --bg2: #32302f;
+      --bg3: #45403d;
+      --bg4: #45403d;
+      --bg5: #5a524c;
+
+      --fg0: #d4be98;
+      --fg1: #ddc7a1;
+
+      --red: #ea6962;
+      --orange: #e78a4e;
+      --yellow: #d8a657;
+      --green: #a9b665;
+      --aqua: #89b482;
+      --blue: #7daea3;
+      --purple: #d3869b;
+
+      --grey0: #7c6f64;
+      --grey1: #928374;
+      --grey2: #a89984;
     }
 
     * {
@@ -50,6 +73,7 @@
       margin: 0 auto;
       padding: 40px 20px;
       max-width: 800px;
+      transition: background-color 0.3s ease, color 0.3s ease;
     }
 
     /* Headers */
@@ -57,6 +81,7 @@
       color: var(--fg1);
       margin-top: 1em;
       margin-bottom: 0.5em;
+      transition: color 0.3s ease;
     }
 
     h1 { color: var(--yellow); }
@@ -84,6 +109,7 @@
       border: none;
       border-top: 1px solid var(--bg3);
       margin: 1.5em 0;
+      transition: border-color 0.3s ease;
     }
 
     /* Paragraphs */
@@ -95,17 +121,20 @@
     strong {
       color: var(--fg1);
       font-weight: 600;
+      transition: color 0.3s ease;
     }
 
     /* Italic text */
     em, i {
       color: var(--grey2);
       font-style: italic;
+      transition: color 0.3s ease;
     }
 
     /* Subtext class */
     .subtext {
       color: var(--grey2);
+      transition: color 0.3s ease;
     }
 
     /* Selection */
@@ -121,6 +150,7 @@
       padding: 2px 6px;
       border-radius: 3px;
       font-family: 'Monaco', 'Courier New', monospace;
+      transition: background-color 0.3s ease, color 0.3s ease;
     }
 
     /* Smooth scrolling */
@@ -133,11 +163,11 @@
   {{ content }}
   <script>
     (function() {
+      // --- Vim Motions ---
       let lastKey = '';
       let lastKeyTime = 0;
 
       window.addEventListener('keydown', function(e) {
-        // Ignore if modifier keys are pressed or if user is in an input field
         if (e.metaKey || e.ctrlKey || e.altKey || ['INPUT', 'TEXTAREA'].includes(document.activeElement.tagName)) {
           return;
         }
@@ -164,6 +194,42 @@
           lastKey = '';
         }
       });
+
+      // --- Theme Switcher (2-finger swipe) ---
+      const html = document.documentElement;
+      
+      // Load saved theme
+      const savedTheme = localStorage.getItem('theme');
+      if (savedTheme) {
+        html.setAttribute('data-theme', savedTheme);
+      }
+
+      function toggleTheme() {
+        const current = html.getAttribute('data-theme');
+        const next = current === 'dark' ? 'light' : 'dark';
+        html.setAttribute('data-theme', next);
+        localStorage.setItem('theme', next);
+      }
+
+      let isSwiping = false;
+      let swipeTimeout;
+
+      window.addEventListener('wheel', function(e) {
+        // Detect horizontal swipe (like macOS desktop switch)
+        // Adjust threshold as needed. 30 is a reasonable start for trackpads.
+        if (Math.abs(e.deltaX) > 30 && Math.abs(e.deltaY) < 10) {
+          if (!isSwiping) {
+            isSwiping = true;
+            toggleTheme();
+            
+            // Prevent multiple switches in a single gesture
+            clearTimeout(swipeTimeout);
+            swipeTimeout = setTimeout(() => {
+              isSwiping = false;
+            }, 1000); // 1 second cooldown
+          }
+        }
+      }, { passive: true });
     })();
   </script>
 </body>
