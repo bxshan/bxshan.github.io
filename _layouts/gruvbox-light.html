@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>{{ page.title }}</title>
+  <link rel="icon" type="image/png" href="{{ '/icon.png' | relative_url }}">
+  <style>
+    /* Gruvbox Material Light Soft Theme */
+    :root {
+      /* Background colors */
+      --bg-dim: #ebdbb2;
+      --bg0: #f2e5bc;
+      --bg1: #eddeb5;
+      --bg2: #ebdbb2;
+      --bg3: #e6d5ae;
+      --bg4: #dac9a5;
+      --bg5: #d5c4a1;
+
+      /* Foreground colors */
+      --fg0: #654735;
+      --fg1: #4f3829;
+
+      /* Accent colors */
+      --red: #c14a4a;
+      --orange: #c35e0a;
+      --yellow: #b47109;
+      --green: #6c782e;
+      --aqua: #4c7a5d;
+      --blue: #45707a;
+      --purple: #945e80;
+
+      /* Gray colors */
+      --grey0: #a89984;
+      --grey1: #928374;
+      --grey2: #7c6f64;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: var(--bg0);
+      color: var(--fg0);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      line-height: 1.5;
+      margin: 0 auto;
+      padding: 40px 20px;
+      max-width: 800px;
+    }
+
+    /* Headers */
+    h1, h2, h3, h4, h5, h6 {
+      color: var(--fg1);
+      margin-top: 1em;
+      margin-bottom: 0.5em;
+    }
+
+    h1 { color: var(--yellow); }
+    h2 { color: var(--orange); }
+    h3 { color: var(--aqua); }
+
+    /* Links */
+    a {
+      color: var(--blue);
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+
+    a:hover {
+      color: var(--aqua);
+      text-decoration: underline;
+    }
+
+    a:visited {
+      color: var(--purple);
+    }
+
+    /* Horizontal rules */
+    hr {
+      border: none;
+      border-top: 1px solid var(--bg3);
+      margin: 1.5em 0;
+    }
+
+    /* Paragraphs */
+    p {
+      margin: 0.5em 0;
+    }
+
+    /* Strong/Bold text */
+    strong {
+      color: var(--fg1);
+      font-weight: 600;
+    }
+
+    /* Italic text */
+    em, i {
+      color: var(--grey2);
+      font-style: italic;
+    }
+
+    /* Subtext class */
+    .subtext {
+      color: var(--grey2);
+    }
+
+    /* Selection */
+    ::selection {
+      background-color: var(--bg3);
+      color: var(--fg1);
+    }
+
+    /* Code-like elements (for the :wq<CR> at bottom) */
+    code {
+      background-color: var(--bg1);
+      color: var(--green);
+      padding: 2px 6px;
+      border-radius: 3px;
+      font-family: 'Monaco', 'Courier New', monospace;
+    }
+
+    /* Smooth scrolling */
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body>
+  {{ content }}
+  <script>
+    (function() {
+      let lastKey = '';
+      let lastKeyTime = 0;
+
+      window.addEventListener('keydown', function(e) {
+        // Ignore if modifier keys are pressed or if user is in an input field
+        if (e.metaKey || e.ctrlKey || e.altKey || ['INPUT', 'TEXTAREA'].includes(document.activeElement.tagName)) {
+          return;
+        }
+
+        const scrollAmount = 100;
+        const now = Date.now();
+
+        if (e.key === 'j') {
+          window.scrollBy(0, scrollAmount);
+        } else if (e.key === 'k') {
+          window.scrollBy(0, -scrollAmount);
+        } else if (e.key === 'g') {
+          if (lastKey === 'g' && (now - lastKeyTime) < 500) {
+            window.scrollTo(0, 0);
+            lastKey = '';
+          } else {
+            lastKey = 'g';
+            lastKeyTime = now;
+          }
+        } else if (e.key === 'G') {
+          window.scrollTo(0, document.body.scrollHeight);
+          lastKey = '';
+        } else {
+          lastKey = '';
+        }
+      });
+    })();
+  </script>
+</body>
+</html>

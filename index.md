@@ -1,5 +1,5 @@
 ---
-layout: gruvbox
+layout: gruvbox-light
 title: Boxuan Shan Resume
 ---
 
