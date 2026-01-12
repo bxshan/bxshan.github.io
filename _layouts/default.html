@@ -16,10 +16,50 @@
       padding: 40px 20px;
       max-width: 800px; /* Centers resume */
     }
+
+    /* Smooth scrolling */
+    html {
+      scroll-behavior: smooth;
+    }
   </style>
 </head>
 <body>
   {{ content }}
+  <script>
+    (function() {
+      let lastKey = '';
+      let lastKeyTime = 0;
+
+      window.addEventListener('keydown', function(e) {
+        // Ignore if modifier keys are pressed or if user is in an input field
+        if (e.metaKey || e.ctrlKey || e.altKey || ['INPUT', 'TEXTAREA'].includes(document.activeElement.tagName)) {
+          return;
+        }
+
+        const scrollAmount = 100;
+        const now = Date.now();
+
+        if (e.key === 'j') {
+          window.scrollBy(0, scrollAmount);
+        } else if (e.key === 'k') {
+          window.scrollBy(0, -scrollAmount);
+        } else if (e.key === 'g') {
+          if (lastKey === 'g' && (now - lastKeyTime) < 500) {
+            window.scrollTo(0, 0);
+            lastKey = '';
+          } else {
+            lastKey = 'g';
+            lastKeyTime = now;
+          }
+        } else if (e.key === 'G') {
+          window.scrollTo(0, document.body.scrollHeight);
+          lastKey = '';
+        } else {
+          lastKey = '';
+        }
+      });
+    })();
+  </script>
 </body>
 </html>
 
