@@ -32,6 +32,7 @@ title: Boxuan Shan Resume
 </div>
 </div>
 
+<div class="subtext">
 <div style="font-size: smaller; padding-left: 20px;">
 <div style="display:flex; justify-content:space-between;">
 <span>AP Calculus BC (5), AP Physics C: Mechanics (5)</span>
@@ -44,6 +45,7 @@ title: Boxuan Shan Resume
 <div style="display:flex; justify-content:space-between;">
 <span>AP Chemistry, AP Microeconomics, AP Macroeconomics, AP European History</span>
 <span>2026 (expected)</span>
+</div>
 </div>
 </div>
 
