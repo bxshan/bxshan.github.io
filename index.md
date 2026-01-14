@@ -60,7 +60,7 @@ title: Boxuan Shan Resume
 <span>Fall 2025</span>
 </div>
 <div style="display:flex; justify-content:space-between; padding-left:20px;">
-<span>99.94% (A+), Final Assessment Grade Pending</span>
+<span>99.04% (A+)</span>
 </div>
 
 <div style="display:flex; justify-content:space-between;">
