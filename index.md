@@ -14,7 +14,7 @@ title: Boxuan Shan Resume
 ## EDUCATION
 <div style="display:flex; justify-content:space-between;">
 <strong>The Harker School</strong>
-<span>Sep. 2024 - present</span>
+<span>Sep. 2024 – present</span>
 </div>
 
 <div class="subtext">
@@ -77,17 +77,17 @@ title: Boxuan Shan Resume
 <div class="subtext">
 <div style="display:flex; justify-content:space-between;">
 <span>Topics include: DP, Graphs & Trees manipulations, DSU, MST, Combinatorics, etc</span>
-<span>Jan. 2025 - present</span>
+<span>Jan. 2025 – present</span>
 </div>
 </div>
 
 ---
 
-## PROFESSIONAL EXPERIENCES 
+## PROFESSIONAL EXPERIENCE
 
 <div style="display:flex; justify-content:space-between;">
 <strong>Next Capital — Operations / Investment Intern
-<a href="https://www.jiachengcap.com" target="_blank" aria-label="GitHub">
+<a href="https://www.jiachengcap.com" target="_blank" aria-label="Next Capital website">
   ➤
 </a>
 </strong>
@@ -97,9 +97,6 @@ title: Boxuan Shan Resume
 <div class="subtext">
 <div style="display:flex; justify-content:space-between;">
 <span>Conducted research and wrote reports on targeted areas of potential investment</span>
-</div>
-<div style="display:flex; justify-content:space-between;">
-<span>Research</span>
 </div>
 <div style="display:flex; justify-content:space-between; padding-left:20px;">
 <span>Used as reference for 2 promotional videos and 3 articles to expand Next Capital’s visibility</span>
@@ -117,9 +114,9 @@ title: Boxuan Shan Resume
 ## RESEARCH
 
 <div style="display:flex; justify-content:space-between;">
-<strong>Tracing Institutional Bias Transfer from Wikipedia to Large Language Models  <a href="https://github.com/bxshan/research2026" target="_blank" aria-label="GitHub"> ➤ </a>
+<strong>Tracing Institutional Bias Transfer from Wikipedia to Large Language Models <a href="https://github.com/bxshan/research2026" target="_blank" aria-label="GitHub"> ➤ </a>
 </strong>
-<span>Oct. 2025 - present</span>
+<span>Oct. 2025 – present</span>
 </div>
 <div class="subtext">
 <div style="display:flex; justify-content:space-between;">
