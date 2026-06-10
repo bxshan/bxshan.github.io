@@ -22,10 +22,10 @@ title: Boxuan Shan Resume
 <span>Freshman GPA 4.23 (weighted)</span>
 </div>
 <div class="row">
-<span>Sophomore GPA 4.43</span>
+<span>Sophomore GPA 4.43 (weighted)</span>
 </div>
 <div class="row">
-<span>Cumulative 4.33</span>
+<span>Cumulative GPA 4.33 (weighted)</span>
 </div>
 
 <br/>
@@ -130,7 +130,7 @@ title: Boxuan Shan Resume
 </div>
 
 <div class="row indent">
-<span>We examine how the bias of a training corpus transfers to a model fine-tuned on that corpus. Specifically, we fine-tune the Llama 3.2 3B Instruct model on three corpora that span a range of measured bias scores: NELA-GT (partisan US political news), NELA-PS (hyper-local auto-generated news content), and a corpus of Wikipedia articles on high schools in the US, which measured the least bias of the three. We evaluate the four resulting models (three fine-tuned conditions and the Llama base) on 300 completions across 15 prompts each covering a salient topic (making 1,200 total). Bias at the completions level is scored using an LLM-as-Judge rubric, and at the embedding-level with the Word Embedding Association Test (WEAT). Fine-tuning on the NELA-GT corpus raises mean completion bias above the base model, with the largest bias shifts specifically on the topics of climate and immigration; fine-tuning on the NELA-PS corpus reduces completion bias. However, fine-tuning on the Wikipedia corpus produces the highest mean completions bias, and the largest WEAT effect sizes, despite the corpus itself having the lowest bias scores. This Wikipedia result is attributable to three factors: overfitting on a small training set, hallucinations of fake content (laws, policy, etc.) that the judge attributes to high bias, and amplification of pre-existing biased associations in the base model. These results indicate that corpus- level bias scores are not reliable predictors of fine-tuned model bias, and that LLM-as- Judge evaluations that do not separate factual accuracy from biased framing will mark higher biases in models that produce more hallucinations.</span>
+<span>We examine how the bias of a training corpus transfers to a model fine-tuned on that corpus. Specifically, we fine-tune the Llama 3.2 3B Instruct model on three corpora that span a range of measured bias scores: NELA-GT (partisan US political news), NELA-PS (hyper-local auto-generated news content), and a corpus of Wikipedia articles on high schools in the US, which measured the least bias of the three. We evaluate the four resulting models (three fine-tuned conditions and the Llama base) on 300 completions across 15 prompts each covering a salient topic (making 1,200 total). Bias at the completion level is scored using an LLM-as-Judge rubric, and at the embedding-level with the Word Embedding Association Test (WEAT). Fine-tuning on the NELA-GT corpus raises mean completion bias above the base model, with the largest bias shifts specifically on the topics of climate and immigration; fine-tuning on the NELA-PS corpus reduces completion bias. However, fine-tuning on the Wikipedia corpus produces the highest mean completion bias, and the largest WEAT effect sizes, despite the corpus itself having the lowest bias scores. This Wikipedia result is attributable to three factors: overfitting on a small training set, hallucinations of fake content (laws, policy, etc.) that the judge attributes to high bias, and amplification of pre-existing biased associations in the base model. These results indicate that corpus-level bias scores are not reliable predictors of fine-tuned model bias, and that LLM-as-Judge evaluations that do not separate factual accuracy from biased framing will mark higher biases in models that produce more hallucinations.</span>
 </div>
 
 </div>
