@@ -22,7 +22,10 @@ title: Boxuan Shan Resume
 <span>Freshman GPA 4.23 (weighted)</span>
 </div>
 <div class="row">
-<span>Sophomore GPA 4.38 (weighted) as of Jan 4, 2026</span>
+<span>Sophomore GPA 4.43</span>
+</div>
+<div class="row">
+<span>Cumulative 4.33</span>
 </div>
 
 <br/>
@@ -44,7 +47,7 @@ title: Boxuan Shan Resume
 </div>
 <div class="row">
 <span>AP Chemistry, AP Microeconomics, AP Macroeconomics, AP European History</span>
-<span>2026 (expected)</span>
+<span>2026 (pending grade)</span>
 </div>
 </div>
 </div>
@@ -60,7 +63,7 @@ title: Boxuan Shan Resume
 <span>Fall 2025</span>
 </div>
 <div class="row indent">
-<span>99.04% (A+)</span>
+<span>99.04%</span>
 </div>
 
 <div class="row">
@@ -114,7 +117,7 @@ title: Boxuan Shan Resume
 ## RESEARCH
 
 <div class="row">
-<strong>Tracing Institutional Bias Transfer from Wikipedia to Large Language Models <a href="https://github.com/bxshan/research2026" target="_blank" aria-label="GitHub"> ➤ </a>
+<strong>Bias Transfer in Large Language Models through Supervised Fine-Tuning <a href="https://github.com/bxshan/research2026" target="_blank" aria-label="GitHub"> ➤ </a>
 </strong>
 <span>Oct. 2025 – present</span>
 </div>
@@ -125,12 +128,11 @@ title: Boxuan Shan Resume
 <div class="row">
 <strong>Abstract</strong>
 </div>
+
 <div class="row indent">
-<span>Large Language Models (LLMs) rely heavily on Wikipedia as part of their training data, yet Wikipedia contains socioeconomic biases in how it describes institutions such as high schools. This project investigates whether these biases—in article length, descriptive language, and geographic associations—transfer to LLMs even when entity names and locations are removed (“blinded”).</span>
+<span>We examine how the bias of a training corpus transfers to a model fine-tuned on that corpus. Specifically, we fine-tune the Llama 3.2 3B Instruct model on three corpora that span a range of measured bias scores: NELA-GT (partisan US political news), NELA-PS (hyper-local auto-generated news content), and a corpus of Wikipedia articles on high schools in the US, which measured the least bias of the three. We evaluate the four resulting models (three fine-tuned conditions and the Llama base) on 300 completions across 15 prompts each covering a salient topic (making 1,200 total). Bias at the completions level is scored using an LLM-as-Judge rubric, and at the embedding-level with the Word Embedding Association Test (WEAT). Fine-tuning on the NELA-GT corpus raises mean completion bias above the base model, with the largest bias shifts specifically on the topics of climate and immigration; fine-tuning on the NELA-PS corpus reduces completion bias. However, fine-tuning on the Wikipedia corpus produces the highest mean completions bias, and the largest WEAT effect sizes, despite the corpus itself having the lowest bias scores. This Wikipedia result is attributable to three factors: overfitting on a small training set, hallucinations of fake content (laws, policy, etc.) that the judge attributes to high bias, and amplification of pre-existing biased associations in the base model. These results indicate that corpus- level bias scores are not reliable predictors of fine-tuned model bias, and that LLM-as- Judge evaluations that do not separate factual accuracy from biased framing will mark higher biases in models that produce more hallucinations.</span>
 </div>
-<div class="row indent">
-<span>By training three GPT-2 models from scratch on controlled datasets (original Wikipedia, entity-blinded Wikipedia, and entity-blinded Wikipedia with high school articles added), this research evaluates whether entity blinding reduces institutional bias and how bias is reintroduced, with implications for safer AI development.</span>
-</div>
+
 </div>
 
 <br/>
