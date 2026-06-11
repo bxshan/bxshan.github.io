@@ -75,6 +75,21 @@ title: Boxuan Shan Resume
 <br/>
 
 <div class="row">
+<strong>COSMOS @ UCLA — Cluster 6: From Medicine to Hollywood: Artificial Intelligence for Speech and Imagery</strong>
+<span>Jul. 2026 - Aug. 2026</span>
+</div>
+<div class="subtext">
+<div class="row">
+<span>California State Summer School for Mathematics and Science — selective 4-week residential STEM research program</span>
+</div>
+<div class="row indent">
+<span>Machine learning for speech processing and computer vision, with applications spanning medical diagnostics to entertainment</span>
+</div>
+</div>
+
+<br/>
+
+<div class="row">
 <strong>USACO Courses w/ X-Camp (602H)</strong>
 </div>
 <div class="subtext">

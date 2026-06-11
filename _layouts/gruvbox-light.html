@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>{{ page.title }}</title>
   <link rel="icon" type="image/png" href="{{ '/icon.png' | relative_url }}">
   <style>
@@ -141,6 +142,8 @@
     .row {
       display: flex;
       justify-content: space-between;
+      flex-wrap: wrap;
+      column-gap: 1em;
     }
 
     .indent {
@@ -175,9 +178,61 @@
     html {
       scroll-behavior: smooth;
     }
+
+    /* Theme toggle button */
+    #theme-toggle {
+      position: fixed;
+      top: 12px;
+      right: 12px;
+      background-color: var(--bg2);
+      color: var(--fg0);
+      border: 1px solid var(--bg5);
+      border-radius: 6px;
+      padding: 4px 9px;
+      font-size: 14px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    #theme-toggle:hover {
+      background-color: var(--bg4);
+    }
+
+    /* Print */
+    @media print {
+      :root, [data-theme="dark"] {
+        --bg0: #fff;
+        --bg1: #fff;
+        --bg3: #bbb;
+        --fg0: #000;
+        --fg1: #000;
+        --grey2: #444;
+        --red: #000;
+        --orange: #000;
+        --yellow: #000;
+        --green: #000;
+        --aqua: #000;
+        --blue: #000;
+        --purple: #000;
+      }
+
+      body {
+        padding: 0;
+        font-size: 12px;
+      }
+
+      #theme-toggle {
+        display: none;
+      }
+
+      *, body, h1, h2, h3, h4, h5, h6, a, hr, strong, em, i, .subtext, code {
+        transition: none !important;
+      }
+    }
   </style>
 </head>
 <body>
+  <button id="theme-toggle" aria-label="Toggle light/dark theme" title="Toggle theme (t)">◐</button>
   {{ content }}
   <script>
     (function() {
@@ -208,6 +263,9 @@
         } else if (e.key === 'G') {
           window.scrollTo(0, document.body.scrollHeight);
           lastKey = '';
+        } else if (e.key === 't') {
+          toggleTheme();
+          lastKey = '';
         } else {
           lastKey = '';
         }
@@ -216,11 +274,15 @@
       // --- Theme Switcher (2-finger swipe) ---
       const html = document.documentElement;
       
-      // Load saved theme
+      // Load saved theme, falling back to the OS preference
       const savedTheme = localStorage.getItem('theme');
       if (savedTheme) {
         html.setAttribute('data-theme', savedTheme);
+      } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        html.setAttribute('data-theme', 'dark');
       }
+
+      document.getElementById('theme-toggle').addEventListener('click', toggleTheme);
 
       function toggleTheme() {
         const current = html.getAttribute('data-theme');
