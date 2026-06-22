@@ -6,6 +6,20 @@
   <title>{{ page.title }}</title>
   <link rel="icon" type="image/png" href="{{ '/icon.png' | relative_url }}">
   <style>
+    /* Comic Mono font */
+    @font-face {
+      font-family: 'Comic Mono';
+      font-style: normal;
+      font-weight: 400;
+      src: url('https://cdn.jsdelivr.net/gh/dtinth/comic-mono-font@master/ComicMono.ttf') format('truetype');
+    }
+    @font-face {
+      font-family: 'Comic Mono';
+      font-style: normal;
+      font-weight: 700;
+      src: url('https://cdn.jsdelivr.net/gh/dtinth/comic-mono-font@master/ComicMono-Bold.ttf') format('truetype');
+    }
+
     /* Gruvbox Material Theme (Light/Dark Switchable) */
     :root {
       /* Default to Light Soft Theme */
@@ -68,7 +82,7 @@
     body {
       background-color: var(--bg0);
       color: var(--fg0);
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      font-family: 'Comic Mono', monospace;
       font-size: 14px;
       line-height: 1.5;
       margin: 0 auto;
@@ -170,7 +184,7 @@
       color: var(--green);
       padding: 2px 6px;
       border-radius: 3px;
-      font-family: 'Monaco', 'Courier New', monospace;
+      font-family: 'Comic Mono', monospace;
       transition: background-color 0.3s ease, color 0.3s ease;
     }
 
