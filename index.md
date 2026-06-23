@@ -5,7 +5,8 @@ title: Boxuan Shan Resume
 
 <div class="center">
   <h3>Boxuan Shan</h3>
-  <p>Cupertino, California • <a href="mailto:boxuan.shan@gmail.com">boxuan.shan@gmail.com</a> • 857 413 1628 • <a href="https://github.com/bxshan">github.com/bxshan</a></p>
+  <p>Cupertino, California • <a href="https://github.com/bxshan">github.com/bxshan</a></p>
+  <p><code><a href="mailto:boxuan.shan@gmail.com">boxuan.shan@gmail.com</a> • 857 413 1628</code></p>
   <p><i>Sophomore student at the Harker School with a focus on machine learning, competitive programming, and mathematics. Possesses significant research experience applying machine learning to real-world problems. Proficient in Python, C++, and Java, complemented by professional experience in investment research.</i></p>
 </div>
 
@@ -36,7 +37,7 @@ title: Boxuan Shan Resume
 </div>
 
 <div class="subtext">
-<div class="small indent">
+<div class="indent">
 <div class="row">
 <span>AP Calculus BC (5), AP Physics C: Mechanics (5)</span>
 <span>2024</span>
