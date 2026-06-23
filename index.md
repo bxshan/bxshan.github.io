@@ -7,7 +7,7 @@ title: Boxuan Shan Resume
   <h3>Boxuan Shan</h3>
   <p>Cupertino, California • <a href="https://github.com/bxshan">github.com/bxshan</a></p>
   <p><code><a href="mailto:boxuan.shan@gmail.com">boxuan.shan@gmail.com</a> • 857 413 1628</code></p>
-  <p><i>Sophomore student at the Harker School with a focus on machine learning, competitive programming, and mathematics. Possesses significant research experience applying machine learning to real-world problems. Proficient in Python, C++, and Java, complemented by professional experience in investment research.</i></p>
+  <p><i>Sophomore at The Harker School focused on machine learning, competitive programming, and mathematics. Independent ML researcher applying machine learning to real-world problems, with professional experience in investment research. Works in Python, C++, and Java.</i></p>
 </div>
 
 ---
@@ -15,7 +15,7 @@ title: Boxuan Shan Resume
 ## EDUCATION
 <div class="row">
 <strong>The Harker School</strong>
-<span>Sep. 2024 – present</span>
+<span>September 2024 – Present</span>
 </div>
 
 <div class="subtext">
@@ -77,7 +77,7 @@ title: Boxuan Shan Resume
 
 <div class="row">
 <strong>COSMOS @ UCLA — Cluster 6: From Medicine to Hollywood: Artificial Intelligence for Speech and Imagery</strong>
-<span>Jul. 2026 - Aug. 2026</span>
+<span>July – August 2026</span>
 </div>
 <div class="subtext">
 <div class="row">
@@ -95,36 +95,8 @@ title: Boxuan Shan Resume
 </div>
 <div class="subtext">
 <div class="row">
-<span>Topics include: DP, Graphs & Trees manipulations, DSU, MST, Combinatorics, etc</span>
-<span>Jan. 2025 – present</span>
-</div>
-</div>
-
----
-
-## PROFESSIONAL EXPERIENCE
-
-<div class="row">
-<strong>Next Capital — Operations / Investment Intern
-<a href="https://www.jiachengcap.com" target="_blank" aria-label="Next Capital website">
-  ➤
-</a>
-</strong>
-<span>Jul. – Aug. 2025</span>
-</div>
-
-<div class="subtext">
-<div class="row">
-<span>Conducted research and wrote reports on targeted areas of potential investment</span>
-</div>
-<div class="row indent">
-<span>Used as reference for 2 promotional videos and 3 articles to expand Next Capital’s visibility</span>
-</div>
-<div class="row indent">
-<span>Informed decisions on emergent investment opportunities</span>
-</div>
-<div class="row">
-<span>Supported incubated projects through market research and field analysis</span>
+<span>Topics include dynamic programming, graph and tree algorithms, DSU, MST, and combinatorics</span>
+<span>January 2025 – Present</span>
 </div>
 </div>
 
@@ -135,20 +107,22 @@ title: Boxuan Shan Resume
 <div class="row">
 <strong>Bias Transfer in Large Language Models through Supervised Fine-Tuning <a href="https://github.com/bxshan/research2026" target="_blank" aria-label="GitHub"> ➤ </a>
 </strong>
-<span>Oct. 2025 – present</span>
+<span>October 2025 – Present</span>
 </div>
 <div class="subtext">
 <div class="row">
 <span>Independent Research</span>
 </div>
-<div class="row">
-<strong>Abstract</strong>
-</div>
 
 <div class="row indent">
-<span>We examine how the bias of a training corpus transfers to a model fine-tuned on that corpus. Specifically, we fine-tune the Llama 3.2 3B Instruct model on three corpora that span a range of measured bias scores: NELA-GT (partisan US political news), NELA-PS (hyper-local auto-generated news content), and a corpus of Wikipedia articles on high schools in the US, which measured the least bias of the three. We evaluate the four resulting models (three fine-tuned conditions and the Llama base) on 300 completions across 15 prompts each covering a salient topic (making 1,200 total). Bias at the completion level is scored using an LLM-as-Judge rubric, and at the embedding-level with the Word Embedding Association Test (WEAT). Fine-tuning on the NELA-GT corpus raises mean completion bias above the base model, with the largest bias shifts specifically on the topics of climate and immigration; fine-tuning on the NELA-PS corpus reduces completion bias. However, fine-tuning on the Wikipedia corpus produces the highest mean completion bias, and the largest WEAT effect sizes, despite the corpus itself having the lowest bias scores. This Wikipedia result is attributable to three factors: overfitting on a small training set, hallucinations of fake content (laws, policy, etc.) that the judge attributes to high bias, and amplification of pre-existing biased associations in the base model. These results indicate that corpus-level bias scores are not reliable predictors of fine-tuned model bias, and that LLM-as-Judge evaluations that do not separate factual accuracy from biased framing will mark higher biases in models that produce more hallucinations.</span>
+<span>Designed and ran a controlled fine-tuning study on Llama 3.2 3B Instruct across 3 corpora (NELA-GT, NELA-PS, and US high-school Wikipedia articles), producing and evaluating 4 models on 1,200 completions across 15 salient-topic prompts</span>
 </div>
-
+<div class="row indent">
+<span>Scored output bias with an LLM-as-Judge rubric and Word Embedding Association Test (WEAT) effect sizes, isolating overfitting and content hallucination as primary drivers of measured bias</span>
+</div>
+<div class="row indent">
+<span>Found that corpus-level bias scores do not predict fine-tuned model bias, showing why LLM-as-Judge evaluations must separate factual accuracy from biased framing</span>
+</div>
 </div>
 
 <br/>
@@ -162,14 +136,36 @@ title: Boxuan Shan Resume
 <div class="row">
 <span>Conducted with mentorship from Dr. Françeska Xhakaj of Carnegie Mellon University, through Pioneer Academics</span>
 </div>
+<div class="row indent">
+<span>Built a linear-regression classifier on the English-Wikipedia PAN-WVC-10 dataset (Amazon Mechanical Turk labels), achieving 80% accuracy, 76% precision, 89% recall, and a 13% false-positive rate</span>
+</div>
+<div class="row indent">
+<span>Demonstrated scalable automated detection of malicious edits for the largest volunteer-edited online encyclopedia</span>
+</div>
+</div>
+
+---
+
+## PROFESSIONAL EXPERIENCE
+
 <div class="row">
-<strong>Abstract</strong>
+<strong>Next Capital — Operations / Investment Intern
+<a href="https://www.jiachengcap.com" target="_blank" aria-label="Next Capital website">
+  ➤
+</a>
+</strong>
+<span>July – August 2025</span>
+</div>
+
+<div class="subtext">
+<div class="row">
+<span>Researched and authored investment reports on target sectors, informing leadership decisions on emerging opportunities</span>
 </div>
 <div class="row indent">
-<span>Wikipedia is the largest online encyclopedia and relies on volunteer contributors, making it vulnerable to malicious or biased edits (“vandalism”). This project applies machine learning to improve vandalism detection at scale.</span>
+<span>Produced underlying research for 2 promotional videos and 3 articles that expanded Next Capital’s market visibility</span>
 </div>
 <div class="row indent">
-<span>Using the English Wikipedia PAN-WVC-10 dataset (Amazon Mechanical Turk), a linear regression model achieved 80% accuracy, 76% precision, 89% recall, and a 13% false positive rate, demonstrating the feasibility of scalable automated detection methods.</span>
+<span>Conducted market research and field analysis to support incubated portfolio projects</span>
 </div>
 </div>
 
@@ -184,24 +180,29 @@ title: Boxuan Shan Resume
 
 <div class="row">
 <strong>SSAT Perfect Score</strong>
-<span>November 2022</span>
+<span>2022</span>
 </div>
 
 ---
 
-## SKILLS & INTERESTS
+## LANGUAGES & TECHNOLOGIES
 
 <div class="row">
-<span><strong>Python</strong> (USACO + AI/ML), <strong>C++</strong> (USACO), <strong>Java</strong> (AP CS A w/ Data Structures)</span>
+<span>Python (USACO, AI/ML) · C++ (USACO) · Java (AP Computer Science A, data structures)</span>
+</div>
+
+---
+
+## INTERESTS
+
+<div class="row">
+<span>Native Chinese and English speaker</span>
 </div>
 <div class="row">
-<span>Native in <strong>Chinese</strong> and <strong>English</strong></span>
+<span>Water Polo — Junior Varsity starter</span>
 </div>
 <div class="row">
-<span><strong>Water Polo</strong> Junior Varsity Starter</span>
-</div>
-<div class="row">
-<span>More information about my programming journey can be found at <a href="https://github.com/bxshan">github.com/bxshan</a></span>
+<span>More about my programming journey at <a href="https://github.com/bxshan">github.com/bxshan</a></span>
 </div>
 
 ---
