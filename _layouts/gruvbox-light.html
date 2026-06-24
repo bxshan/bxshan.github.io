@@ -185,6 +185,12 @@
 
     /* Accomplishment bullets */
     .row.indent {
+      margin: 0.25em 0;
+    }
+
+    .row.indent > span::before {
+      content: "-";
+      margin-right: 0.5em;
       color: var(--green);
     }
 
