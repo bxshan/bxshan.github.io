@@ -71,6 +71,11 @@ title: Boxuan Shan Resume
 <span>XM511 Linear Algebra</span>
 <span>Spring 2026</span>
 </div>
+
+<div class="row">
+<span>XM522 Multivariable Integral Calculus</span>
+<span>Summer 2026</span>
+</div>
 </div>
 
 <br/>
