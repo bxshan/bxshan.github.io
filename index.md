@@ -76,7 +76,7 @@ title: Boxuan Shan Resume
 <br/>
 
 <div class="row">
-<strong>COSMOS @ UCLA — Cluster 6: From Medicine to Hollywood: Artificial Intelligence for Speech and Imagery</strong>
+<strong>COSMOS @ UCLA — Cluster 6: From Medicine to Hollywood: AI for Speech and Imagery</strong>
 <span>July – August 2026</span>
 </div>
 <div class="subtext">
@@ -158,7 +158,7 @@ title: Boxuan Shan Resume
 </div>
 
 <div class="subtext">
-<div class="row">
+<div class="row indent">
 <span>Researched and authored investment reports on target sectors, informing leadership decisions on emerging opportunities</span>
 </div>
 <div class="row indent">

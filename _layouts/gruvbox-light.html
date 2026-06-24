@@ -157,21 +157,35 @@
       color: var(--aqua);
     }
 
-    /* Right-aligned dates, years, and values */
+    /* Right-aligned dates, years, and values — always pinned right, never wrapped */
     .row > *:last-child:not(:only-child) {
       color: var(--yellow);
+      flex-shrink: 0;
+      white-space: nowrap;
+      text-align: right;
     }
 
     /* Layout helpers */
     .row {
       display: flex;
       justify-content: space-between;
-      flex-wrap: wrap;
+      flex-wrap: nowrap;
       column-gap: 1em;
+      align-items: baseline;
+    }
+
+    /* Let long titles wrap within their column instead of pushing the date to a new line */
+    .row > *:first-child {
+      min-width: 0;
     }
 
     .indent {
       padding-left: 20px;
+    }
+
+    /* Accomplishment bullets */
+    .row.indent {
+      color: var(--green);
     }
 
     .center {
