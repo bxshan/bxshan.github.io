@@ -214,3 +214,7 @@ title: Boxuan Shan Resume
 <div class="center">
   :wq&lt;CR&gt;
 </div>
+
+<div class="center">
+  <button id="download-pdf" title="Save resume as PDF">⤓ Download PDF</button>
+</div>

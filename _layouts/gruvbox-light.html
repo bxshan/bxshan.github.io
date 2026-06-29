@@ -240,31 +240,81 @@
       background-color: var(--bg4);
     }
 
+    /* Download-PDF button (bottom of page) */
+    #download-pdf {
+      display: inline-block;
+      margin-top: 1em;
+      background-color: var(--bg2);
+      color: var(--fg0);
+      border: 1px solid var(--bg5);
+      border-radius: 6px;
+      padding: 6px 14px;
+      font-family: 'Comic Mono', monospace;
+      font-size: 14px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    #download-pdf:hover {
+      background-color: var(--bg4);
+    }
+
+    /* Off-screen measurement metrics — applied momentarily by the download
+       script to measure content height. MUST match the @media print body below
+       exactly, so the computed page height fits the resume on a single page. */
+    html.pdf-measure body {
+      width: 816px;
+      max-width: 816px;
+      margin: 0;
+      padding: 1.5cm;
+      font-size: 13px;
+    }
+    /* match print: drop the screen-only buttons and the leading/trailing
+       child margins so measured height equals the printed height */
+    html.pdf-measure #download-pdf,
+    html.pdf-measure #theme-toggle {
+      display: none;
+    }
+    html.pdf-measure #theme-toggle + *,
+    html.pdf-measure #theme-toggle + * > *:first-child {
+      margin-top: 0;
+    }
+
     /* Print */
     @media print {
-      :root, [data-theme="dark"] {
-        --bg0: #fff;
-        --bg1: #fff;
-        --bg3: #bbb;
-        --fg0: #000;
-        --fg1: #000;
-        --grey2: #444;
-        --red: #000;
-        --orange: #000;
-        --yellow: #000;
-        --green: #000;
-        --aqua: #000;
-        --blue: #000;
-        --purple: #000;
+      /* Single continuous page: the download script sets @page size to the exact
+         content height so there are no page breaks. The background fills the whole
+         sheet edge-to-edge (@page margin 0) and body padding insets the text — so
+         every side gets an even 1.5cm colored margin. */
+      @page {
+        margin: 0;
       }
 
       body {
-        padding: 0;
+        width: 816px;
+        max-width: 816px;
+        margin: 0;
+        padding: 1.5cm;
         font-size: 13px;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
       }
 
-      #theme-toggle {
+      /* even 1.5cm on top: strip the leading heading margin so the body padding
+         is the only inset (matches html.pdf-measure above) */
+      #theme-toggle + *,
+      #theme-toggle + * > *:first-child {
+        margin-top: 0;
+      }
+
+      #theme-toggle,
+      #download-pdf {
         display: none;
+      }
+
+      * {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
       }
 
       *, body, h1, h2, h3, h4, h5, h6, a, hr, strong, em, i, .subtext, code {
@@ -278,6 +328,28 @@
   {{ content }}
   <script>
     (function() {
+      // --- Download as a single-page PDF ---
+      // Measure the content at the print metrics, then size @page to fit exactly,
+      // so the PDF is one continuous page with even 1.5cm margins on all sides.
+      const dlBtn = document.getElementById('download-pdf');
+      if (dlBtn) {
+        dlBtn.addEventListener('click', function() {
+          const W = 816; // 8.5in @ 96dpi — fixed PDF width
+          const root = document.documentElement;
+          root.classList.add('pdf-measure');
+          const h = Math.ceil(document.body.getBoundingClientRect().height);
+          root.classList.remove('pdf-measure');
+          let st = document.getElementById('pdf-page-rule');
+          if (!st) {
+            st = document.createElement('style');
+            st.id = 'pdf-page-rule';
+            document.head.appendChild(st);
+          }
+          st.textContent = '@page { size: ' + W + 'px ' + h + 'px; margin: 0; }';
+          window.print();
+        });
+      }
+
       // --- Vim Motions ---
       let lastKey = '';
       let lastKeyTime = 0;
