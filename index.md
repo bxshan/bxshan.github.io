@@ -217,5 +217,5 @@ title: Boxuan Shan Resume
 
 <div class="center">
   <button class="download-pdf" data-variant="" title="Download as PDF (color)">⤓ Color PDF</button>
-  <button class="download-pdf" data-variant="pdf-bw" title="Download as PDF (black &amp; white, serif)">⤓ B&amp;W Serif PDF</button>
+  <button class="download-pdf" data-variant="pdf-bw" title="Download the official black &amp; white printable résumé">⤓ Official</button>
 </div>
