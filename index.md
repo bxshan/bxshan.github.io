@@ -47,8 +47,8 @@ title: Boxuan Shan Resume
 <span>2025</span>
 </div>
 <div class="row">
-<span>AP Chemistry, AP Microeconomics, AP Macroeconomics, AP European History</span>
-<span>2026 (pending grade)</span>
+<span>AP Chemistry (5), AP Microeconomics (5), AP Macroeconomics (5), AP European History (5)</span>
+<span>2026</span>
 </div>
 </div>
 </div>
