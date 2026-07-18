@@ -184,6 +184,11 @@ title: Boxuan Shan Resume
 </div>
 
 <div class="row">
+<strong>Calico Gold Brick (top 11 US, top 16 pre-college, top 20 int'l)</strong>
+<span>2025 Spring</span>
+</div>
+
+<div class="row">
 <strong>SSAT Perfect Score</strong>
 <span>2022</span>
 </div>
