@@ -7,7 +7,7 @@ title: Boxuan Shan Resume
   <h3>Boxuan Shan</h3>
   <p>Cupertino, California • <a href="https://github.com/bxshan">github.com/bxshan</a></p>
   <p><code><a href="mailto:boxuan.shan@gmail.com">boxuan.shan@gmail.com</a> • 857 413 1628</code></p>
-  <p><i>Sophomore at The Harker School focused on machine learning, competitive programming, and mathematics. Independent ML researcher applying machine learning to real-world problems, with professional experience in investment research. Works in Python, C++, and Java.</i></p>
+  <p><i>Junior at The Harker School focused on machine learning, competitive programming, and mathematics. Independent ML researcher applying machine learning to real-world problems, with professional experience in investment research. Works in Python, C++, Java, Docker, Git, etc.</i></p>
 </div>
 
 ---
@@ -32,7 +32,7 @@ title: Boxuan Shan Resume
 <br/>
 
 <div class="row">
-<strong>Advanced curriculum:</strong>
+<strong>Advanced Placement curriculum:</strong>
 </div>
 </div>
 
@@ -42,14 +42,43 @@ title: Boxuan Shan Resume
 <span>AP Calculus BC (5), AP Physics C: Mechanics (5)</span>
 <span>2024</span>
 </div>
+
 <div class="row">
 <span>AP Computer Science A (5), AP Chinese (5)</span>
 <span>2025</span>
 </div>
+
 <div class="row">
 <span>AP Chemistry (5), AP Microeconomics (5), AP Macroeconomics (5), AP European History (5)</span>
 <span>2026</span>
 </div>
+
+<div class="row">
+<span>AP Biology (..), AP United States History (..), AP Physics C: E & M (..)</span>
+<span>2026</span>
+</div>
+
+</div>
+</div>
+
+<br/>
+
+<div class="row">
+<strong>Post-AP curriculum:</strong>
+</div>
+
+<div class="subtext">
+<div class="indent">
+<div class="row">
+<span>Compilers & Interpreters</span>
+<span>2024</span>
+</div>
+
+<div class="row">
+<span>Computer Architecture, Expert Systems, Discrete Mathematics, Differential Equations</span>
+<span>2025</span>
+</div>
+
 </div>
 </div>
 
@@ -195,28 +224,89 @@ title: Boxuan Shan Resume
 
 ---
 
+## COMMUNITY INVOLVEMENT
+
+<div class="row">
+<strong>Harker Programming Club (HPC) — Problem Writer</strong>
+</div>
+
+<div class="subtext">
+<div class="row">
+<span>Writing USACO-style competitive programming problems for HPC hosted programming competitions.</span>
+</div>
+<div class="row indent">
+<span>GPL 2026, "Concert Planning"</span>
+</div>
+</div>
+
+<br/>
+
+<div class="row">
+<strong>National Chinese Honor Society (NCHS) — Officer</strong>
+</div>
+
+<div class="subtext">
+<div class="row">
+<span>Help organize events around campus to promote Chinese culture and learning.</span>
+</div>
+<div class="row indent">
+<span>Ran booths introducing students from middle to high school to calligraphy, language, holidays, music, etc.</span>
+</div>
+</div>
+
+<br/>
+
+<div class="row">
+<strong>HarkerDev — Technical Member</strong>
+</div>
+
+<div class="subtext">
+<div class="row">
+<span>One of 17 total students accepted. Lower School pickup application coordinating dismissal for 300+ families.</span>
+</div>
+<div class="row indent">
+<span>Containerized Flask application with Docker for reproducible deployment</span>
+</div>
+<div class="row indent">
+<span>Built unit, integration, and regression tests with pytest</span>
+</div>
+<div class="row indent">
+<span>Unify timezone handling, correcting a daily dismissal-sheet reset that ran on server time instead of local time</span>
+</div>
+<div class="row indent">
+<span>Redacted PII (incl. phone numbers, student names, and message contents) from production logs</span>
+</div>
+</div>
+
+---
+
 ## LANGUAGES & TECHNOLOGIES
 
 <div class="row">
 <span>Python (USACO, AI/ML) · C++ (USACO) · Java (AP Computer Science A, data structures)</span>
 </div>
+<div class="row">
+<span>Flask · Docker · SQLAlchemy · pytest · Google Sheets API · Twilio API · Git</span>
+</div>
 
 ---
 
-## INTERESTS
+<div class="keep-together">
+<h2>INTERESTS</h2>
 
 <div class="row">
 <span>Native Chinese and English speaker</span>
 </div>
 <div class="row">
-<span>Water Polo — Junior Varsity starter</span>
+<span>Water Polo — Junior Varsity starter goalkeeper</span>
 </div>
 <div class="row">
 <span>More about my programming journey at <a href="https://github.com/bxshan">github.com/bxshan</a></span>
 </div>
+</div>
 
 ---
-<div class="center">
+<div class="center sig">
   :wq&lt;CR&gt;
 </div>
 

@@ -305,6 +305,12 @@
         display: none;
       }
 
+      /* Keep a wrapped section whole rather than orphaning a line or two
+         across a page break. */
+      .keep-together {
+        break-inside: avoid;
+      }
+
       /* "Official" black & white serif variant (added via the pdf-bw class on
          <html>): white page, black text, serif font — overrides the Gruvbox
          theme. Even margins come from @page margin: 1.5cm (per-page, so they
@@ -323,6 +329,11 @@
       }
       html.pdf-bw a {
         text-decoration: none;
+      }
+      /* The :wq signature is a web flourish; drop it from the official
+         printable résumé (it was spilling onto a third page). */
+      html.pdf-bw .sig {
+        display: none;
       }
       html.pdf-bw code {
         background: transparent !important;
