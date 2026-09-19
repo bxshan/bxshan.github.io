@@ -55,7 +55,7 @@ title: Boxuan Shan Resume
 
 <div class="row">
 <span>AP Biology (..), AP United States History (..), AP Physics C: E & M (..)</span>
-<span>2026</span>
+<span>2027</span>
 </div>
 
 </div>
@@ -103,7 +103,7 @@ title: Boxuan Shan Resume
 
 <div class="row">
 <span>XM522 Multivariable Integral Calculus</span>
-<span>Summer 2026</span>
+<span>Fall 2026</span>
 </div>
 </div>
 
