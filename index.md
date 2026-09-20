@@ -15,7 +15,7 @@ title: Boxuan Shan Resume
 ## EDUCATION
 <div class="row">
 <strong>The Harker School</strong>
-<span>September 2024 – Present</span>
+<span>September 2024 – June 2028</span>
 </div>
 
 <div class="subtext">
@@ -71,12 +71,12 @@ title: Boxuan Shan Resume
 <div class="indent">
 <div class="row">
 <span>Compilers & Interpreters</span>
-<span>2024</span>
+<span>2025 - 2026</span>
 </div>
 
 <div class="row">
 <span>Computer Architecture, Expert Systems, Discrete Mathematics, Differential Equations</span>
-<span>2025</span>
+<span>2026 - 2027</span>
 </div>
 
 </div>
