@@ -240,7 +240,22 @@ title: Boxuan Shan Resume
 <span>Writing USACO-style competitive programming problems for HPC hosted programming competitions.</span>
 </div>
 <div class="row indent">
-<span>GPL 2026, "Concert Planning"</span>
+<details class="problem">
+<summary>GPL 2026, "Concert Planning II"</summary>
+<div class="statement">
+<p>Boxuan is an aspiring K-Pop star planning her concerts in California. The state can be thought of as a <strong>forest</strong> of <var>N</var> cities with <var>M</var> (0 ≤ <var>M</var> ≤ <var>N</var> − 1) roads between them. A forest is a collection of one or more disconnected components that are <strong>tree</strong> graphs.</p>
+<p>Each city has fans, who are either <span class="excited">excited</span> or <span class="tired">tired</span> of her singing.</p>
+<p>When Boxuan performs in a city <var>v</var>, word travels and influences only the cities <strong>neighboring</strong> <var>v</var>.</p>
+<ul>
+<li>a city with <span class="excited">excited</span> fans attends the concert, and returns home <span class="tired">tired</span>;</li>
+<li>a city with <span class="tired">tired</span> fans is rejuvenated by her melodic voice, and returns home <span class="excited">excited</span>.</li>
+</ul>
+<p>The residents of city <var>v</var> are not affected, as they are boycotting her concert over noise pollution concerns.</p>
+<p>Boxuan knows the binary state of her fans at each city today, and which ones need to be excited / tired by the end of her tour.</p>
+<p>A tour is defined as a set of cities, for each of which Boxuan performs a concert exactly once. Tours <var>A</var> and <var>B</var> are distinct iff Boxuan visits a city in tour <var>A</var> but not in tour <var>B</var>, or Boxuan visits a city in tour <var>B</var> but not in tour <var>A</var>. The tour may be empty.</p>
+<p>Count the number of tours that can get her from the state now to her goal. This count can be large, so report it modulo 998&thinsp;244&thinsp;353, or 0 if no such tour can do so.</p>
+</div>
+</details>
 </div>
 </div>
 

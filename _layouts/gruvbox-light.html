@@ -190,11 +190,45 @@
     }
 
     .row.indent > span:first-child::before,
-    .indent > .row > span:first-child::before {
+    .indent > .row > span:first-child::before,
+    .row.indent > details.problem > summary::before {
       content: "-";
       margin-right: 0.5em;
       color: var(--green);
     }
+
+    /* Expandable problem statement under a problem-writer bullet */
+    details.problem > summary {
+      list-style: none;
+      cursor: pointer;
+    }
+    details.problem > summary::-webkit-details-marker {
+      display: none;
+    }
+    details.problem > summary::after {
+      content: "[+]";
+      margin-left: 0.5em;
+      color: var(--grey1);
+    }
+    details.problem[open] > summary::after {
+      content: "[-]";
+    }
+    details.problem > summary:hover {
+      color: var(--fg1);
+    }
+    .statement {
+      margin: 0.5em 0 0.75em 1.25em;
+      padding-left: 0.75em;
+      border-left: 2px solid var(--bg4);
+    }
+    .statement ul {
+      margin: 0.5em 0 0.5em 1.5em;
+    }
+    .statement var {
+      color: var(--fg1);
+    }
+    .statement .excited { color: var(--red); }
+    .statement .tired { color: var(--blue); }
 
     .center {
       text-align: center;
@@ -302,6 +336,12 @@
 
       #theme-toggle,
       .download-pdf {
+        display: none;
+      }
+
+      /* The problem statement is a web-only dropdown; print just the title */
+      details.problem > .statement,
+      details.problem > summary::after {
         display: none;
       }
 
