@@ -226,8 +226,13 @@ title: Boxuan Shan Resume
 
 ## COMMUNITY INVOLVEMENT
 
+
 <div class="row">
-<strong>Harker Programming Club (HPC) — Problem Writer</strong>
+<strong>Harker Programming Club (HPC) - Problem Writer
+<a href="https://sites.google.com/students.harker.org/harkerprogrammingclub/home/" target="_blank" aria-label="HPC website">
+  ➤
+</a>
+</strong>
 </div>
 
 <div class="subtext">
@@ -257,7 +262,11 @@ title: Boxuan Shan Resume
 <br/>
 
 <div class="row">
-<strong>HarkerDev — Technical Member</strong>
+<strong>HarkerDev - Technical Member
+<a href="https://dev.harker.org/" target="_blank" aria-label="HarkerDev website">
+  ➤
+</a>
+</strong>
 </div>
 
 <div class="subtext">
@@ -298,7 +307,7 @@ title: Boxuan Shan Resume
 <span>Native Chinese and English speaker</span>
 </div>
 <div class="row">
-<span>Water Polo — Junior Varsity starter goalkeeper</span>
+<span>Water Polo — Junior Varsity team captain; goalkeeper</span>
 </div>
 <div class="row">
 <span>More about my programming journey at <a href="https://github.com/bxshan">github.com/bxshan</a></span>
