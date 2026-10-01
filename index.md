@@ -262,6 +262,22 @@ title: Boxuan Shan Resume
 <br/>
 
 <div class="row">
+<strong>TeamsCode - Problem Writer
+<a href="https://www.teamscode.org/" target="_blank" aria-label="TeamsCode website">
+  ➤
+</a>
+</strong>
+</div>
+
+<div class="subtext">
+<div class="row">
+<span>Writing competitive programming problems for TeamsCode programming contests.</span>
+</div>
+</div>
+
+<br/>
+
+<div class="row">
 <strong>National Chinese Honor Society (NCHS) — Officer</strong>
 </div>
 
