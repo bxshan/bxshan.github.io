@@ -145,7 +145,7 @@ title: Boxuan Shan Resume
 </div>
 <div class="subtext">
 <div class="row">
-<span>Independent Research</span>
+<span>Independent Research, sole author — accepted to the AACL-IJCNLP 2026 Student Research Workshop (peer-reviewed, non-archival)</span>
 </div>
 
 <div class="row indent">
